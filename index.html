@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Short survey form collecting feedback on user experience with the website.</p>
+    <form id="survey-form">
+      <label id="name-label" >Name
+        <input id="name"  type="text" required placeholder="name" />
+        </label>
+      <label id="email-label">Email
+        <input id="email" placeholder="email" placeholder="email" type="email" required />
+      </label>
+      <label id="number-label">Age
+        <input id="number" placeholder="number" type="number" max="130" min="13" />
+      </label>
+      <label>Gender
+          <select id="dropdown">
+            <option>choose</option>
+            <option>male</option>
+            <option>female</option>
+          </select>
+      </label>
+      <label>How did you hear about us: 
+        <input  type="checkbox" value="whatsapp" />whatsapp
+        <input  type="checkbox" value="friends" />Friends
+        <input  type="checkbox" value="advertisement" />advertisement
+     </label>
+     <fieldset>Rate your experience
+       <label>
+         <input type="radio" value="avarage" name="experience" id="avarage"/>avarage
+         </label>
+         <label>
+            <input type="radio" value="good" name="experience" id="good"/>good
+        </label>
+        <label>
+          <input type="radio" value="perfect" name="experience" id="perfect"/>perfect
+       </label>
+       <label> Give a short description to your rating:
+         <textarea id="description" placeholder="It is because of..." rows="3" cols="30" >
+
+         </textarea>
+         </label>
+        </fieldset> 
+    <input type="submit" value="submit" id="submit" />
+  </form>
+  </body> 
+
+</html>
